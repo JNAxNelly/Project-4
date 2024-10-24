@@ -50,8 +50,13 @@ nav ul li a:hover {
 
 /* Adjust Title Styling */
 .site-title {
-  text-align: center;
-  margin: 2rem 0; /* Adjust spacing above and below the title */
+  text-align: center;          /* Center the text */
+  background-color: #333;     /* Black background */
+  color: white;                /* White text */
+  padding: 0.5rem 0;            /* Reduced padding to make it shorter */
+  margin: 0;                   /* Remove any default margin */
+  width: 100%;                 /* Ensure it spans the full width */
+  position: relative;          /* No longer fixed, part of the normal flow */
 }
 
 h1 {
