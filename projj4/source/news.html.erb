@@ -1,0 +1,34 @@
+
+<body>
+<h1 class="news-title">News </h1>
+
+<h2 class="subnews-title">Service</h2>
+
+<p class="news-info"><a href="https://www.mdpi.com/journal/mathematics/special_issues/KK83053602" target="_blank">Special issue editor</a>: Emerging networks and blockchain technology. Please consider submitting your work.</p>
+
+<p class="news-info">TPC member Sigmetrics '23</p>
+
+<p class="news-info">Organized Workshop on Blockchains and Networking, Sigmetrics '22</p>
+
+<p class="news-info">TPC member Sigmetrics '22</p>
+
+<p class="news-info">TPC member ICBC '22</p>
+
+<p class="news-info">TPC member ITC '34</p>
+
+<p class="news-info">TPC member Mobihoc '22</p>
+
+<p class="news-info">TPC member Sigmetrics '21</p>
+
+<p class="news-info">TPC member Mobhico '22</p>
+
+<p class="news-info">TPC member Workshop on <a href="https://networking.ifip.org/2021/workshops/di2f-decentralising-the-internet-with-ipfs-and-filecoin" target="_blank">Decentralising the Internet with IPFS and Filecoin (DI2F)</a> (part of <a href="https://networking.ifip.org/2021/" target="_blank">IFIP Networking '21</a>)</p>
+
+<h2 class="subnews-title">Some Articles on Dandelion</h2>
+
+<p class="news-info">Papers: <a href="https://dl.acm.org/doi/10.1145/3084459" target="_blank">here</a> and <a href="https://arxiv.org/pdf/1805.11060" target="_blank">here</a>!</p>
+
+<% data.newslinks["news_links"].each do |source|%>
+<p class="news-info"><a href="<%= source["link"]%>" target="_blank"><%= source["site"]%></a></p>
+<% end %>
+</body>
