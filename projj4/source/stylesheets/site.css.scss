@@ -59,11 +59,19 @@ nav ul li a:hover {
   position: relative;          /* No longer fixed, part of the normal flow */
 }
 
-h1 {
-
-    background-color: black;
-    background-size: 300px 100px;
-    color: white;
-    text-align: center;
-
+.news-title {
+  text-align: center;
+  font-family: 'Garamond';
+  color:crimson;
 }
+.subnews-title {
+  text-align: center;
+  font-family: 'Garamond';
+}
+.news-info {
+  text-align: center;
+  font-family: 'Garamond';
+  font-size: 17px;
+  margin: 12px;
+  color:black;
+}  

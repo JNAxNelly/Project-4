@@ -1,0 +1,18 @@
+news_links:
+- link: "https://crypto.news/"
+  site: "BTCManager"
+
+- link: "https://cyberscoop.com/researchers-redesign-bitcoin-anonymity-u-s-law-enforcement-hires-specialists/" 
+  site: "CyberScoop"
+
+- link: "https://news.bitcoin.com/dandelion-bitcoin-anonymize-transaction-broadcasts/"
+  site: "Bitcoin"
+
+- link: "https://www.oodlestechnologies.com/blogs/Bitcoin-To-Get-More-Anonymous-With-The-New-BIP-Called-Dandelion/"
+  site: "Oodlesttechnologies"
+
+- link: "https://infocoin.net/en/2018/05/15/bitcoin-privacy-proposal/"
+  site: "InfoCoin"
+
+- link: "https://www.wired.com/story/harry-pottery-cryptocurrency-privacy-zcash-monero/"
+  site: "Wired"
