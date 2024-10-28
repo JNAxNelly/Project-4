@@ -1,0 +1,46 @@
+<h1>Research Publications</h1>
+<table border="1">
+  <tr>
+    <th>Title</th>
+    <th>Authors</th>
+    <th>Conference</th>
+    <th>Link</th>
+  </tr>
+  <% data.research["research"].each do |publication| %>
+    <tr>
+      <td><strong><%= publication["title"] %></strong></td>
+      <td><%= publication["authors"] %></td>
+      <td><%= publication["conference"] %></td>
+      <td>
+        <% if publication["link"] %>
+          <a href="<%= publication["link"] %>" target="_blank">View Publication</a>
+        <% else %>
+          N/A
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+</table>
+<h1>Dissertation & Reports</h1>
+<table border="1">
+  <tr>
+    <th>Title</th>
+    <th>Authors</th>
+    <th>Date</th>
+    <th>Link</th>
+  </tr>
+  <% data.research["dissertation_and_reports"].each do |report| %>
+    <tr>
+      <td><strong><%= report["title"] %></strong></td>
+      <td><%= report["authors"] %></td>
+      <td><%= report["date"] %></td>
+      <td>
+        <% if report["link"] %>
+          <a href="<%= report["link"] %>" target="_blank">View Document</a>
+        <% else %>
+          N/A
+        <% end %>
+      </td>
+    </tr>
+  <% end %>
+</table>
