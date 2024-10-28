@@ -4,6 +4,8 @@ html, body {
   padding: 0;
   overflow-x: hidden; /* Prevent horizontal scrolling */
   width: 100%;
+  height: 100%;
+  font-family: Garamond;
 }
 
 /* Navigation Bar Styling */
@@ -50,11 +52,64 @@ nav ul li a:hover {
 
 /* Adjust Title Styling */
 .site-title {
-  text-align: center;          /* Center the text */
-  background-color: #333;     /* Black background */
-  color: white;                /* White text */
-  padding: 0.5rem 0;            /* Reduced padding to make it shorter */
-  margin: 0;                   /* Remove any default margin */
-  width: 100%;                 /* Ensure it spans the full width */
-  position: relative;          /* No longer fixed, part of the normal flow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  font-weight: bold;
 }
+
+.site-title h1 {
+  margin: 0 0 0 10px; /* Add space between the logo and text */
+  font-size: 1.5rem;
+}
+
+.osu-logo {
+  height: 50px; /* Adjust logo size as needed */
+  width: auto;
+}
+
+.teaching-page {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  min-height: 100vh; /* Take up full height of the viewport */
+  padding: 2rem;
+  box-sizing: border-box;
+  max-width: 800px; /* Set a maximum width for the content */
+  margin: 0 auto; /* Center horizontally on the page */
+}
+
+.teaching-page h1, .teaching-page h2, .teaching-page h3 {
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center; /* Center text horizontally */
+}
+
+/* Styling for courses and students */
+.teaching-page .courses ul, .teaching-page .students ul {
+  list-style-type: none; /* Remove bullets from lists */
+  padding: 0;
+}
+
+.teaching-page .courses li, .teaching-page .students li {
+  margin-bottom: 8px; /* Space between items */
+  text-align: center; /* Ensure text is centered */
+}
+
+.teaching-page .students a {
+  color: #007acc; /* Blue link color */
+  text-decoration: none;
+}
+
+.teaching-page .students a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+
