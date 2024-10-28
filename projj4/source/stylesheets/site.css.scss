@@ -4,6 +4,7 @@ html, body {
   padding: 0;
   overflow-x: hidden;
   width: 100%;
+  font-family: Garamond;
 }
 
 /* OSU Red */
@@ -143,16 +144,17 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
+/* News title css format */
 .news-title {
-  text-align: center;
+  text-align: center; 
   font-family: 'Garamond';
-  color:crimson;
 }
+/* Subnews title css format */
 .subnews-title {
   text-align: center;
   font-family: 'Garamond';
 }
+/* News information css format */
 .news-info {
   text-align: center;
   font-family: 'Garamond';
@@ -160,3 +162,42 @@ a:hover {
   margin: 12px;
   color:black;
 }  
+
+.teaching-page {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  min-height: 100vh; /* Take up full height of the viewport */
+  padding: 2rem;
+  box-sizing: border-box;
+  max-width: 800px; /* Set a maximum width for the content */
+  margin: 0 auto; /* Center horizontally on the page */
+}
+
+.teaching-page h1, .teaching-page h2, .teaching-page h3 {
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center; /* Center text horizontally */
+}
+
+/* Styling for courses and students */
+.teaching-page .courses ul, .teaching-page .students ul {
+  list-style-type: none; /* Remove bullets from lists */
+  padding: 0;
+}
+
+.teaching-page .courses li, .teaching-page .students li {
+  margin-bottom: 8px; /* Space between items */
+  text-align: center; /* Ensure text is centered */
+}
+
+
+
+.teaching-page .students a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+table {
+  border: 1;
+}
