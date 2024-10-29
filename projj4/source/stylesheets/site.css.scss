@@ -4,6 +4,7 @@ html, body {
   padding: 0;
   overflow-x: hidden;
   width: 100%;
+  font-family: Garamond;
 }
 
 /* OSU Red */
@@ -143,16 +144,17 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
+/* News title css format */
 .news-title {
-  text-align: center;
+  text-align: center; 
   font-family: 'Garamond';
-  color:crimson;
 }
+/* Subnews title css format */
 .subnews-title {
   text-align: center;
   font-family: 'Garamond';
 }
+/* News information css format */
 .news-info {
   text-align: center;
   font-family: 'Garamond';
@@ -160,3 +162,131 @@ a:hover {
   margin: 12px;
   color:black;
 }  
+
+.teaching-page {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  min-height: 100vh; /* Take up full height of the viewport */
+  padding: 2rem;
+  box-sizing: border-box;
+  max-width: 800px; /* Set a maximum width for the content */
+  margin: 0 auto; /* Center horizontally on the page */
+}
+
+.teaching-page h1, .teaching-page h2, .teaching-page h3 {
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center; /* Center text horizontally */
+}
+
+/* Styling for courses and students */
+.teaching-page .courses ul, .teaching-page .students ul {
+  list-style-type: none; /* Remove bullets from lists */
+  padding: 0;
+}
+
+.teaching-page .courses li, .teaching-page .students li {
+  margin-bottom: 8px; /* Space between items */
+  text-align: center; /* Ensure text is centered */
+}
+
+
+
+.teaching-page .students a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+table {
+  border: 1;
+}
+
+/* Profile Section Styling */
+.profile-section {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 90%;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 20px auto;
+  flex-wrap: wrap; /* Wraps content on smaller screens */
+}
+
+.profile-picture {
+  width: 50%; /* Take up half the section */
+  height: auto;
+  object-fit: cover;
+  min-width: 200px; /* Ensures the image doesn't get too small on narrow screens */
+}
+
+.profile-details {
+  padding: 20px;
+  width: 50%;
+  min-width: 250px;
+  box-sizing: border-box;
+}
+
+.profile-details h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.profile-details p {
+  margin: 10px 0;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.profile-details a {
+  color: #4A00E0;
+  text-decoration: none;
+}
+/* Styling for the About Me Header */
+.about-me-header {
+  text-align: left;
+  font-size: 2.5rem; 
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333; /* Dark color for contrast */
+}
+
+
+/* Bio Section Styling */
+.bio-section {
+  max-width: 1200px;
+  width: 90%;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto; /* Centered on the page */
+  border-radius: 4px;
+  text-align: justify;
+}
+
+.bio-section p {
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* Links Section Styling */
+.links-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.links-section a {
+  color: #4A00E0;
+  text-decoration: none;
+  font-size: 1.1em;
+  margin: 0 15px;
+}
+
+.links-section a:hover {
+  text-decoration: underline;
+}
+
