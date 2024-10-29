@@ -201,3 +201,92 @@ a:hover {
 table {
   border: 1;
 }
+
+/* Profile Section Styling */
+.profile-section {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 90%;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 20px auto;
+  flex-wrap: wrap; /* Wraps content on smaller screens */
+}
+
+.profile-picture {
+  width: 50%; /* Take up half the section */
+  height: auto;
+  object-fit: cover;
+  min-width: 200px; /* Ensures the image doesn't get too small on narrow screens */
+}
+
+.profile-details {
+  padding: 20px;
+  width: 50%;
+  min-width: 250px;
+  box-sizing: border-box;
+}
+
+.profile-details h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.profile-details p {
+  margin: 10px 0;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.profile-details a {
+  color: #4A00E0;
+  text-decoration: none;
+}
+/* Styling for the About Me Header */
+.about-me-header {
+  text-align: left;
+  font-size: 2.5rem; 
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333; /* Dark color for contrast */
+}
+
+
+/* Bio Section Styling */
+.bio-section {
+  max-width: 1200px;
+  width: 90%;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto; /* Centered on the page */
+  border-radius: 4px;
+  text-align: justify;
+}
+
+.bio-section p {
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* Links Section Styling */
+.links-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.links-section a {
+  color: #4A00E0;
+  text-decoration: none;
+  font-size: 1.1em;
+  margin: 0 15px;
+}
+
+.links-section a:hover {
+  text-decoration: underline;
+}
+
